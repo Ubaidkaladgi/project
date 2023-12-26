@@ -1,31 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Dashboard</title>
-    <style>
-        /* Add your CSS styling here */
-    </style>
+    <title>Shopping Page</title>
 </head>
 <body>
-    <header>
-        <h1>Shopping Dashboard</h1>
-        <!-- Add navigation links or menu here -->
-    </header>
 
-    <section id="products">
-        <h2>Available Products</h2>
-        <!-- Display products here -->
-    </section>
+    <h1>Welcome to our Shopping Page</h1>
 
-    <section id="cart">
-        <h2>Shopping Cart</h2>
-        <!-- Display items in the shopping cart here -->
-    </section>
+    <ul>
+        <li>
+            <h2>Product 1</h2>
+            <p>Description: This is the description of Product 1.</p>
+            <p>Price: $20.00</p>
+            <form action="addToCart.jsp" method="post">
+                <input type="hidden" name="productId" value="1">
+                <input type="submit" value="Add to Cart">
+            </form>
+        </li>
 
-    <footer>
-        <!-- Add footer content here -->
-    </footer>
+        <li>
+            <h2>Product 2</h2>
+            <p>Description: This is the description of Product 2.</p>
+            <p>Price: $25.00</p>
+            <form action="addToCart.jsp" method="post">
+                <input type="hidden" name="productId" value="2">
+                <input type="submit" value="Add to Cart">
+            </form>
+        </li>
+
+        <!-- Add more products as needed -->
+
+    </ul>
+
 </body>
 </html>
